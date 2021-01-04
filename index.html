@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 50%;
+        height: 70vh;
+        border: 2px solid black;
+        margin: 100px auto;
+        padding: 50px;
+      }
+      .field {
+        border: 2px solid black;
+        width: 90%;
+        height: 50px;
+        padding: 10px;
+        margin: 5px;
+      }
+      .msgb {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <form action="">
+        <div class="field">
+          <label for="username">UserName: </label>
+          <input type="text" name="username" id="username" />
+          <p class="msgb" id="erruname"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" />
+          <p class="msgb" id="erremail"></p>
+        </div>
+        <div class="field">
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" />
+          <p class="msgb" id="errpword"></p>
+        </div>
+        <div class="field">
+          <input
+            type="submit"
+            id="sbtn"
+            onclick="return validate()"
+            value="sumbit"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
